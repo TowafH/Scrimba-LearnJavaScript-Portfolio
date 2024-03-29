@@ -1,0 +1,76 @@
+/* Regular CSS */
+
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+img {
+    width: 200px;
+    display: block;
+}
+
+hr{
+  border: 2px solid black;
+}
+
+p {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Rendering an Error Message practice CSS*/
+#shoesDiv {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn1 {
+    background: white;
+    color: black;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#error {
+    color: red;
+    font-weight: 200;
+}
+
+/* Barebones Calculator CSS*/
+#calc{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 0;
+  margin: 0;
+  text-align: center;
+}
+
+span {
+    border-bottom: 2px solid black;
+    padding: 4px;
+}
+
+.btn2{
+  margin: 20px 0;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 8px;
+}
+
+/* Home Button CSS*/
+#homeBtn{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rebeccapurple;
+}
