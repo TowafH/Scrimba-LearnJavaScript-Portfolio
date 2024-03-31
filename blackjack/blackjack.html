@@ -4,12 +4,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>BlackJack - Practice</title>
+  <title>Blackjack App</title>
   <link href="blackjack.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/png" href="../images/Favicon.png">
   <script src="blackjack.js" defer></script>
 </head>
-      <body>
-        <h1>Hello World</h1>
-      </body>
+
+<body>
+  <div id="game">
+  <h1>BlackJack</h1>
+  <p id="message-el">Want to play a round?</p>
+  <p id="cards-el">Cards: </p>
+  <p id="sum-el">Sum: </p>
+  <!-- 1. Create a button that says START GAME. 
+  Make it call a startGame() function when clicked -->
+  <button id="startBtn" onclick="startGame()">START GAME</button>
+  <button id="newCardBtn" onclick="newCard()">NEW CARD</button>
+  </div>
+</body>
+
 </html>

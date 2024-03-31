@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url(https://media.istockphoto.com/id/1218355494/vector/poker-table-background-in-green-color.jpg?s=2048x2048&w=is&k=20&c=6UumHf8QXn7M0K_XKuE9Zo6zFcxwkRgLJfIrjyB4C4g=);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h1 {
+  color: goldenrod;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+#game{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#startBtn{
+  background: goldenrod;
+  color: black;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#startBtn:hover{
+  background-color: #F8F8FF;
+  color: black;
+  transition: background-color 0.1s;
+}
+
+#newCardBtn{
+  background: goldenrod;
+  color: black;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 20px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#newCardBtn:hover{
+  background-color: #F8F8FF;
+  color: black;
+  transition: background-color 0.1s;
+}

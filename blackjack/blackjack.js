@@ -1,51 +1,39 @@
+//Declared Variables
 var firstCard = 7
-var secondCard = 14
-
-// Create a variable, sum, and set it to the sum of the two cards
+var secondCard = 11
+let cards = [firstCard, secondCard] //array - ordered list of items. Arrays start at ZERO[0]
 var sum = firstCard + secondCard
+var hasBlackJack = false
+var isAlive = true
+var message = ""
+var messageEl = document.getElementById("message-el")
+var sumEl = document.getElementById("sum-el")
+var cardsEl = document.getElementById("cards-el")
+//let sumEl = document.querySelector("#sum-el or .sum-el") -querySelectors can be used to modify classes (.btn2)
 
-// If-else-if conditonals
+// Created Conditonals with Function
 
-if (sum < 21){
-  console.log("Would you like to draw? 🤔")
-} else if (sum === 21) {
-  console.log("You've got Blackjack! 🥳")
-} else {
-  console.log("You lost the game! 😕")
+function startGame() {
+  renderGame()
 }
 
-// Check if the person is old enough to enter the nightclub (21)
-// Log a suitable message to the console in both cases
-
-var clubAge = 22
-
-// if less than 21 -> "You can not enter the club!"
-// else            -> "Welcome!"
-if (clubAge <= 21) {
-  console.log("No entry!")
-} else {
-  console.log("Welcome to the Club!")
+function renderGame() {
+  cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+  sumEl.textContent = "Sum: " + sum
+  if(sum <= 20){
+    message = "Draw new card?"
+  } else if(sum === 21){
+    message = "You've got Backjack!"
+    hasBlackJack = true
+  } else {
+    message = "You're out!"
+    isAlive = false
+  }
+  messageEl.textContent = message
 }
 
-// Check if the person is elegible for a birthday card from the King! (100)
-
-let cardAge = 100
-
-// if less than 100    -> "Not elegible"
-// else if exactly 100 -> "Here is your birthday card from the King!"
-// else                -> "Not elegible, you have already gotten one"
-if (cardAge < 100){
-  console.log("You are not eligble for a Birthday Card 🙁")
-} else if (cardAge === 100) {
-  console.log("You will recieve a Birthay Card! 🎉")
-} else {
-  console.log("You have already recieved a Birthday Card! 🙄")
+function newCard() {
+  var card = 3
+  sum += card
+  renderGame()
 }
-
-console.log(4 === 3)  // false
-console.log(5 > 2)    // true
-console.log(12 > 12)  // false
-console.log(3 < 0)    // false
-console.log(3 >= 3)   // true
-console.log(11 <= 11) // true
-console.log(3 <= 2)   // false
