@@ -10,11 +10,21 @@
   <script src="part1.js" defer></script>
 </head>
       <body>
-        <div id="shoesDiv">
-        <img src="../images/shoes.png" alt="Nike shoe">
+        <div class="shoesBox">
+          <div class="shoesDivWrapper">
+        <div id="shoesDiv" class="shoesContainer">
+        <img src="../images/nikeShoes.png" alt="Nike shoe">
         <p>Nike shoe</p>
-        <button class="btn1" onclick="buy()">Purchase - $149</button>
-        <p id="error"></p>
+        <button class="btn1" onclick="error()">Purchase - $149</button>
+        <p id="error-el"></p>
+        </div>
+            <div id="shoesDiv" class="shoesContainer">
+              <img src="../images/adidasShoes.jpg" alt="Adidas shoe">
+              <p>Adidas shoe</p>
+              <button class="btn1" onclick="purchase()">Purchase - $79</button>
+              <p id="purchase-el"></p>
+              </div>
+        </div>
         </div>
         <hr>
         

@@ -1,18 +1,20 @@
 /* Regular CSS */
 
 body {
-    background: white;
+    background: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
 }
 
 img {
+    height: 150px;
     width: 200px;
     display: block;
+    border: 2px solid black;
 }
 
-hr{
-  border: 2px solid black;
+hr {
+    border: 2px solid black;
 }
 
 p {
@@ -21,12 +23,37 @@ p {
 }
 
 /* Rendering an Error Message practice CSS*/
-#shoesDiv {
+.shoesDivWrapper {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: 10px; 
+    align-items: center;
+}
+
+.shoesContainer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px; 
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Added margin to create separation */
+}
+
+.shoesBox {
+    background-color: #923535;
+    padding: 20px;
+    border-radius: 10px; 
+    text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .btn1 {
     background: white;
     color: black;
@@ -38,17 +65,21 @@ p {
     border-radius: 20px;
 }
 
-#error {
+#error-el {
     color: red;
     font-weight: 200;
 }
+#purchase-el{
+  color: green;
+  font-weight: 200;
+}
 
 /* Barebones Calculator CSS*/
-#calc{
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 20px 0;
-  margin: 0;
-  text-align: center;
+#calc {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
 }
 
 span {
@@ -56,21 +87,21 @@ span {
     padding: 4px;
 }
 
-.btn2{
-  margin: 20px 0;
-  background: white;
-  color: black;
-  border: 1px solid black;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 5px 8px;
+.btn2 {
+    margin: 20px 0;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 8px;
 }
 
 /* Home Button CSS*/
-#homeBtn{
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rebeccapurple;
+#homeBtn {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rebeccapurple;
 }
