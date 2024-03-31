@@ -1,0 +1,58 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/69/a6/3f/69a63f5a49cc026ea92114f462958947.jpg);
+    background-repeat: no-repeat;
+    font-family: Verdana;
+    font-weight: bold;
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#increment-btn {
+    background: #3f58a2;
+    border: 2px solid black;
+}
+
+#save-btn {
+    background: #5eb05e;
+    border: 2px solid black;
+}
+
+#increment-btn:active, #save-btn:active {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#save-el{
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
