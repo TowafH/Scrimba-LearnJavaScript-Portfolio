@@ -57,7 +57,7 @@ h1{
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
-  width: 80%;
+  width: 85%;
   text-align: center;
   overflow: hidden;
 }
@@ -67,6 +67,12 @@ h1{
   border: 1px solid #000;
   text-decoration: none;
   text-align: left;
+}
+
+#blackjackpractice{
+  background-color: #ffffff;
+  border: 1px solid #000;
+  text-decoration: none;
 }
 
 #asideblackjack{
