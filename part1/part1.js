@@ -69,11 +69,17 @@ console.log("11" + "14") // Logs "1114"
 // "Something went wrong, please try again" in the paragraph
 // that has the id="error".
 
-var errorText = document.getElementById("error")
+var errorText = document.getElementById("error-el")
+var purchaseText = document.getElementById("purchase-el")
 
-function buy() {
+function error() {
     console.log("button clicked")
     errorText.textContent = "Something went wrong, please try again"
+}
+
+function purchase(){
+  console.log("button clicked")
+  purchaseText.textContent = "Thank you for your purchase!"
 }
 
 
