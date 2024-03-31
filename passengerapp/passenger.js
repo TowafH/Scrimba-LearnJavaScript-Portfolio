@@ -13,3 +13,7 @@ function save() {
     countEl.textContent = 0
     count = 0
 }
+
+function home(){
+  window.location.href = "../index.html";
+}

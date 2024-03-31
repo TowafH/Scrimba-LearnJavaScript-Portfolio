@@ -42,7 +42,7 @@ button {
     border: 2px solid black;
 }
 
-#increment-btn:active, #save-btn:active {
+#increment-btn:hover, #save-btn:hover, #home-btn:hover {
     background-color: whitesmoke;
     color: black;
 }
@@ -55,4 +55,9 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#home-btn{
+  background-color: darkgray;
+  border: 2px solid black;
 }
