@@ -1,24 +1,42 @@
 //Declared Variables
-var firstCard = 7
-var secondCard = 11
-let cards = [firstCard, secondCard] //array - ordered list of items. Arrays start at ZERO[0]
-var sum = firstCard + secondCard
+var cards = [] //Array
+var sum = 0
 var hasBlackJack = false
-var isAlive = true
+var isAlive = false
 var message = ""
 var messageEl = document.getElementById("message-el")
 var sumEl = document.getElementById("sum-el")
 var cardsEl = document.getElementById("cards-el")
-//let sumEl = document.querySelector("#sum-el or .sum-el") -querySelectors can be used to modify classes (.btn2)
 
-// Created Conditonals with Function
+
+// Created Functions
+
+function getRandomCard(){
+  var randomNumber = Math.floor( Math.random() * 13) + 1// 0 - 12
+  if(randomNumber > 10){
+    return 10
+  } else if(randomNumber === 1) {
+    return 11
+  } else {
+    return randomNumber
+  }
+}
+
 
 function startGame() {
+  var isAlive = true
+  var firstCard = getRandomCard()
+  var secondCard = getRandomCard()
+  cards = [firstCard, secondCard]
+  sum = firstCard + secondCard
   renderGame()
 }
 
 function renderGame() {
-  cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+  cardsEl.textContent = "Cards: "
+  for (var i = 0; i < cards.length; i += 1){
+    cardsEl.textContent += cards[i] + " "
+  }
   sumEl.textContent = "Sum: " + sum
   if(sum <= 20){
     message = "Draw new card?"
@@ -32,8 +50,10 @@ function renderGame() {
   messageEl.textContent = message
 }
 
+
 function newCard() {
-  var card = 3
+  var card = getRandomCard()
   sum += card
+  cards.push(card)
   renderGame()
 }
