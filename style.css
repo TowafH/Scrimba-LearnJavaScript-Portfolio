@@ -73,13 +73,33 @@ h1{
   background-color: #ffffff;
   border: 1px solid #000;
   text-decoration: none;
+  text-align: left;
 }
 
-#asideblackjack{
+#asidearrays{
   background-color: #ffffff;
   border: 1px solid #000;
   text-decoration: none;
+  text-align: left;
 }
 
+#asideloops{
+  background-color: #ffffff;
+  border: 1px solid #000;
+  text-decoration: none;
+  text-align: left;
+}
 
+#asidearrayloops{
+  background-color: #ffffff;
+  border: 1px solid #000;
+  text-decoration: none;
+  text-align: left;
+}
+#returnvalues{
+  background-color: #ffffff;
+  border: 1px solid #000;
+  text-decoration: none;
+  text-align: left;
+}
 
