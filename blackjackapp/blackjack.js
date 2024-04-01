@@ -1,4 +1,9 @@
 //Declared Variables
+var player = {
+  name: "Towaf",
+  chips: 100
+}
+
 var cards = [] //Array
 var sum = 0
 var hasBlackJack = false
@@ -7,7 +12,12 @@ var message = ""
 var messageEl = document.getElementById("message-el")
 var sumEl = document.getElementById("sum-el")
 var cardsEl = document.getElementById("cards-el")
+  //  document is a OBJECT
+  // .getElementbyId is a METHOD
 
+// Player information
+playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
 
 // Created Functions
 
@@ -52,8 +62,11 @@ function renderGame() {
 
 
 function newCard() {
-  var card = getRandomCard()
-  sum += card
-  cards.push(card)
-  renderGame()
+  // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+  if (isAlive === true && hasBlackJack === false){
+    var card = getRandomCard()
+    sum += card
+    cards.push(card)
+    renderGame()
+  }
 }
