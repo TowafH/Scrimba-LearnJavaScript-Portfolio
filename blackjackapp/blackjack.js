@@ -24,7 +24,7 @@ function getRandomCard(){
 
 
 function startGame() {
-  var isAlive = true
+  isAlive = true
   var firstCard = getRandomCard()
   var secondCard = getRandomCard()
   cards = [firstCard, secondCard]
