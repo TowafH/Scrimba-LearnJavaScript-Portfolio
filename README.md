@@ -98,7 +98,19 @@ This is my Scrimba Portfolio which documents all my practices and projects
 ``Math.floor`` - Turns the decimals into its respective whole number <br>
 ``Math.random()`` - A set of numbers from 0.000 - 0.999 <br>
 ``Math.random()*13`` - Outputs a random set of numbers from 0.0 - 12.999 <br>
-``Math.floor( Math.random()*13 ) + 1`` - Outputs a random set of numbers from 0 - 13
+``Math.floor( Math.random()*13 ) + 1`` - Outputs a random set of numbers from 0 - 13 
+
+<b> Math & Arrays </b>
+
+- The Math object and Arrays can be used to display text <br>
+``let fighters = ["🐉", "🐥", "🐊"]`` <br> <br>
+``let stageEl = document.getElementById("stage")`` <br>
+``let fightButton = document.getElementById("fightButton")`` <br> <br>
+
+``fightButton.addEventListener("click", function() {`` <br>
+``var randomFighterSelector1 = Math.floor(Math.random() * fighters.length)`` <br>
+``var randomFighterSelector2 = Math.floor(Math.random() * fighters.length)``<br>
+ ``stage.textContent = (fighters[randomFighterSelector1] + " vs " + fighters[randomFighterSelector2])``
 
 <b>Return Statements</b>
 
