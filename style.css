@@ -17,7 +17,7 @@ h1{
 .layout {
   border: 2px solid black;
   width: 99%;
-  height: 1000px;
+  height: 10000px;
   display: grid;
   grid:
     "leftSide2 body2 rightSide2" 10fr
@@ -127,10 +127,16 @@ h1{
   text-decoration: none;
   text-align: left;
 }
+#events{
+  background-color: #ffffff;
+  border: 1px solid #000;
+  text-decoration: none;
+  text-align: left;
+}
 
 #passapp{
   background-image: url(images/passimg.png);
-  border: 4px solid #2166c0;
+  border: 4px solid #253e5f;
   border-radius: 25px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -145,7 +151,22 @@ h1{
 }
 #bjapp{
   background-image: url(images/bjimg.png);
-  border: 4px solid #2166c0;
+  border: 4px solid #387821;
+  border-radius: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  height: 32vh;
+  width: 55vh;
+  overflow: hidden;
+  position: relative;
+}
+#browsEx{
+  background-image: url(images/extenimg.png);
+  border: 4px solid #89a5d2;
   border-radius: 25px;
   background-size: cover;
   background-repeat: no-repeat;
