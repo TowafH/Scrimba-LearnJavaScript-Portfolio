@@ -116,3 +116,32 @@ This is my Scrimba Portfolio which documents all my practices and projects
 
 - Values can be returned in a function using ``return``
 <hr>
+
+<h1>Leads Tracker Extension - Takeaways</h1>
+
+<b>Const</b>
+- A variable type that is assigned to a value that will stay the same throughout the code; will not be reassigned.
+
+<b>AddEventListener()</b>
+- DOM object used to write event listeners directly in the JS file, rather than in the HTML file with ``onclick=``
+
+<b>innerHTML</b>
+- Used for rendering out list items in template strings.
+
+<b>``input``.value</b>
+- Used to fetch out the value inputted by the user in the input field
+
+<b>Functon Parameters</b>
+- Parameters can be defined in a function. Allows the developer to use the variable inside the body of the function; requires the argument of myLeads.
+
+<b>Template Strings</b>
+- Allows developers to write strings on multiple lines for multiple visibility; uses ``$`` & ``{}`` to avoid using ``+`` symbols ``${variable}``
+
+<b>localStorage</b>
+- Allows developers to store data across page refreshes; simple database.
+
+<b>The JSON object</b>
+- A common way of storing data in web development; turning an Array into a JSON array using JSON.stringify; JSON.parse to turn a string into an Array.
+
+<b>Objects in Arrays</b>
+- Fetching the 0th index of an array to find the ``.url``
