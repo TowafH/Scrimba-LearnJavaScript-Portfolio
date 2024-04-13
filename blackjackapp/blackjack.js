@@ -12,6 +12,7 @@ var message = ""
 var messageEl = document.getElementById("message-el")
 var sumEl = document.getElementById("sum-el")
 var cardsEl = document.getElementById("cards-el")
+var homeBtn = document.getElementById("homeBtn")
   //  document is a OBJECT
   // .getElementbyId is a METHOD
 
@@ -70,3 +71,7 @@ function newCard() {
     renderGame()
   }
 }
+
+homeBtn.addEventListener("click", function(){
+  window.location.href = "../index.html";
+})
