@@ -6,6 +6,7 @@ const ulEl = document.getElementById("ul-el")
 var deleteBtn = document.getElementById("delete-btn")
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 const tabBtn = document.getElementById("tab-btn")
+const homeBtn = document.getElementById("home-btn")
 
 if (leadsFromLocalStorage) { //If statement that stores the leads, after refreshing
     myLeads = leadsFromLocalStorage
@@ -44,4 +45,8 @@ inputBtn.addEventListener("click", function() {
   inputEl.value = "" 
   localStorage.setItem("myLeads", JSON.stringify(myLeads)) //Saves the myLeads array to localStorage 
   render(myLeads)
+})
+
+homeBtn.addEventListener("click", function(){
+  window.location.href = "../index.html";
 })
