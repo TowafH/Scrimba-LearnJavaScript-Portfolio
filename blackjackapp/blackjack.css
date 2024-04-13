@@ -66,3 +66,21 @@ h1 {
   color: black;
   transition: background-color 0.1s;
 }
+#homeBtn{
+  background: goldenrod;
+  color: black;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 20px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#homeBtn:hover{
+  background-color: #F8F8FF;
+  color: black;
+  transition: background-color 0.1s;
+}
