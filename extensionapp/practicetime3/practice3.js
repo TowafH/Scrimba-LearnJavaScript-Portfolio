@@ -111,14 +111,27 @@ const sentence = generateSentence("highest mountains", ["Mount Everest", "K2", "
 const container = document.getElementById("container")
 
 const imgs = [
-    "images/hip1.jpg",
-    "images/hip2.jpg",
-    "images/hip3.jpg"
+    "images/cris.jpg",
+    "images/cris2.jpg",
+    "images/cris3.jpg"
 ]
 
 function renderImages() {
-  for (i = 0; i < imgs.length; i++)
-    container.innerHTML += `<img class="team-img" src="${imgs[i]}">`
+  let imgsDOM = ""
+  for (i = 0; i < imgs.length; i++) {
+    imgsDOM += `<img alt="Images of Cristiano Ronaldo" class="team-img" src="${imgs[i]}">`
+  }
+  container.innerHTML = imgsDOM
 }
 
 renderImages()
+/////////////////////////////////////////////////////////
+
+// Challenge:
+// Round the price in the button down to two decimal places.
+// Don't know which method to use? Google it!
+
+const totalPrice = "420.69235632455"
+const btn = document.getElementById("purchase-btn")
+btn.textContent = `Buy €${ Number(totalPrice).toFixed(2) }`
+
