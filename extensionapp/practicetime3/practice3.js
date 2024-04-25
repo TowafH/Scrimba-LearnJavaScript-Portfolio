@@ -111,9 +111,9 @@ const sentence = generateSentence("highest mountains", ["Mount Everest", "K2", "
 const container = document.getElementById("container")
 
 const imgs = [
-    "images/cris.jpg",
-    "images/cris2.jpg",
-    "images/cris3.jpg"
+    "imagez/cris.jpg",
+    "imagez/cris2.png",
+    "imagez/cris3.jpg"
 ]
 
 function renderImages() {
