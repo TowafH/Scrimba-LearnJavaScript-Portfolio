@@ -7,13 +7,11 @@ html {
   text-align: center;
 }
 
-h1{
-  text-shadow: 0px 0px 8px black,
-               0px 0px 12px black,
-               0px 0px 16px black,
-               0px 0px 20px black;
+h1 {
+  text-shadow: 0px 0px 8px black, 0px 0px 12px black, 0px 0px 16px black, 0px 0px 20px black;
   color: white;
 }
+
 .layout {
   border: 2px solid black;
   width: 99%;
@@ -40,6 +38,8 @@ h1{
   grid-area: body2;
   background-color: #ffffff;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Add this line to enable flex wrap */
 }
 
 .footer3 {
@@ -52,6 +52,15 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap; /* Add this line to enable flex wrap */
+}
+
+.wrapper {
+  margin-left: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
 }
 
 .flex-item {
@@ -62,135 +71,66 @@ h1{
   text-align: center;
   overflow: hidden;
 }
-.makeBottom{
+
+.makeBottom {
   position: absolute;
   bottom: 0;
   right: 0;
-  left: 0
+  left: 0;
 }
 
-#part1flex{
-  background-color: #ffffff;
-  border: 1px solid #000;
-  text-decoration: none;
-  text-align: left;
-}
-
-#blackjackpractice{
-  background-color: #ffffff;
-  border: 1px solid #000;
-  text-decoration: none;
-  text-align: left;
-}
-
-#asidearrays{
+#part1flex,
+#blackjackpractice,
+#asidearrays,
+#asideloops,
+#asidearrayloops,
+#returnvalues,
+#mathrandom,
+#andop,
+#objects,
+#events {
   background-color: #ffffff;
   border: 1px solid #000;
   text-decoration: none;
   text-align: left;
 }
 
-#asideloops{
-  background-color: #ffffff;
-  border: 1px solid #000;
+#passapp,
+#bjapp,
+#browsEx,
+#trackApp {
+  background-size: cover;
+  background-repeat: no-repeat;
   text-decoration: none;
-  text-align: left;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  height: 32vh;
+  width: 55vh;
+  overflow: hidden;
+  position: relative;
 }
 
-#asidearrayloops{
-  background-color: #ffffff;
-  border: 1px solid #000;
-  text-decoration: none;
-  text-align: left;
-}
-#returnvalues{
-  background-color: #ffffff;
-  border: 1px solid #000;
-  text-decoration: none;
-  text-align: left;
-}
-#mathrandom{
-  background-color: #ffffff;
-  border: 1px solid #000;
-  text-decoration: none;
-  text-align: left;
-}
-#andop{
-  background-color: #ffffff;
-  border: 1px solid #000;
-  text-decoration: none;
-  text-align: left;
-}
-#objects{
-  background-color: #ffffff;
-  border: 1px solid #000;
-  text-decoration: none;
-  text-align: left;
-}
-#events{
-  background-color: #ffffff;
-  border: 1px solid #000;
-  text-decoration: none;
-  text-align: left;
-}
-
-#passapp{
+#passapp {
   background-image: url(images/passimg.png);
   border: 4px solid #253e5f;
   border-radius: 25px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-decoration: none;
-  color: white;
-  margin: 5px;
-  padding: 10px;
-  height: 32vh;
-  width: 55vh;
-  overflow: hidden;
-  position: relative;
 }
-#bjapp{
+
+#bjapp {
   background-image: url(images/bjimg.png);
   border: 4px solid #387821;
   border-radius: 25px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-decoration: none;
-  color: white;
-  margin: 5px;
-  padding: 10px;
-  height: 32vh;
-  width: 55vh;
-  overflow: hidden;
-  position: relative;
 }
-#browsEx{
+
+#browsEx {
   background-image: url(images/extenimg.png);
   border: 4px solid #89a5d2;
   border-radius: 25px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-decoration: none;
-  color: white;
-  margin: 5px;
-  padding: 10px;
-  height: 32vh;
-  width: 55vh;
-  overflow: hidden;
-  position: relative;
 }
-#trackApp{
+
+#trackApp {
   background-image: url(images/trackApp.png);
-  border: 4px solid #89a5d2;
+  border: 4px solid #d7dce5;
   border-radius: 25px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-decoration: none;
-  color: white;
-  margin: 5px;
-  padding: 10px;
-  height: 32vh;
-  width: 55vh;
-  overflow: hidden;
-  position: relative;
 }
