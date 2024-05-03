@@ -141,7 +141,51 @@ This is my Scrimba Portfolio which documents all my practices and projects
 - Allows developers to store data across page refreshes; simple database.
 
 <b>The JSON object</b>
-- A common way of storing data in web development; turning an Array into a JSON array using JSON.stringify; JSON.parse to turn a string into an Array.
+- A common way of storing data in web development; is turning an Array into a JSON array using JSON.stringify; JSON.parse to turn a string into an Array.
 
 <b>Objects in Arrays</b>
 - Fetching the 0th index of an array to find the ``.url``
+<hr>
+
+<h1>Player Tracker App - Takeaways</h1>
+
+<b>import</b>
+- Imported certain functionality from Firebase to utilize a database
+
+<b>Firebase: initializeApp</b>
+- This function was used to initialize the app using the database URL; it uses an app object that can be used.
+
+<b>Firebase: getDatabase</b>
+- Created a database object, using the getDatabase function, and fed it to the app object I made.
+
+<b>Firebase: reference</b>
+- In a Firebase real-time database, everything is a reference. I created a player list reference, where the names would be saved.
+
+<b>Firebase: push</b>
+- A simple function to push a new item into the reference and feed it the value.
+
+
+<b>Firebase: onValue</b>
+- Sits and listens for changes in the databases, which it gets from the "Firebase: snapshot"
+
+<b>IDs</b>
+- In SD, IDs are essential because each item had a unique ID in our database. 
+
+<b>Firebase: remove</b>
+- Using the unique IDs of the values, I can remove items from the database using this function.
+
+<b>Object to Array</b>
+- Transforming objects into arrays; used within the onVaue function to write a for loop on the array.
+
+<b>createElement</b>
+- Instead of innerHTML, more powerful. This created a new element with text content, which can be appended to the parent element.
+
+<b>Flexbox: flex-wrap</b>
+- A flexbox feature used to wrap HTML elements
+
+<b>Flexbox: gap</b>
+- A flexbox feature to create gap between items
+
+<b>user-select</b>
+- UI Experience: Users cannot unintentionally select parts of the app with this CSS attribute.
+
