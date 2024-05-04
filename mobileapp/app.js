@@ -13,6 +13,7 @@ const playerListInDB = ref(database, "playerList")
 const addBtnEl = document.getElementById("add-button")
 const inputFieldEl = document.getElementById("input-field")
 const playerListEl = document.getElementById("player-list")
+const homeBtn = document.getElementById("home-button")
 
 // Event listener for Add button
 addBtnEl.addEventListener("click", function() {
@@ -70,3 +71,7 @@ function appendItemToPlayerListEl(item) {
   
   playerListEl.append(newEl)
 }
+
+homeBtn.addEventListener("click", function(){
+  window.location.href = "../index.html";
+})
